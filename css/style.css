@@ -1,0 +1,336 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Cantarell', sans-serif; 
+    font-family: 'Source Serif Pro', serif;  
+}
+
+html, body {
+	width: 100%;
+    height: 100%;
+    background-color: #F9FDFD;
+}
+
+.page {
+	width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.hero {
+	width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+}
+
+.header {
+    /* background-color: blueviolet; */
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    /* box-shadow: 0 1px 4px rgba(22, 57, 58, 0.15) */
+}
+
+.header-wrap {
+    /* background-color: burlywood; */
+    width: 1300px;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: stretch;
+}
+
+/* NAVIGATION START */
+
+.sopro-logo {
+    width: 180px;
+    height: 56px;
+    background-image: url("../Images/sopro_final_72\ 1.svg");
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: cover;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.navigation .navigation-container{
+    width: 673px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation .navigation-container li a {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #16393A;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* NAVIGATION END */
+
+/* SECTION 1 START */
+
+.abovethefold {
+    width: 100%;
+    height: 980px;
+    /* position: relative; */
+    display: inline-block;
+    /* background-color: hotpink; */
+}
+
+.abovethefold .meditation-image {
+    display: block;
+    margin: auto;
+    margin-top: 128px;
+}
+
+/* Image Animation */
+
+object.meditation-image {
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+object.meditation-image {
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-15px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-15px); }
+}
+
+/* Image Animation */
+
+.abovethefold .section1-text .htext{
+    text-align: center;
+    font-size: 48px;
+    line-height: 58px;
+    font-weight: 700;
+    color: #16393A;
+    margin-top: 32px;
+}
+
+.abovethefold .section1-text .stext{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 400;
+    color: #2D7275;
+    margin-top: 32px;
+}
+
+/* Section 2 Start */
+
+.section2 {
+    width: 100%;
+    height: 1080px;
+    position: relative;
+    background-color: #D2EDEE;
+    /* margin-top: 196px; */
+    display: flex;
+}
+
+.section2-part1 {
+    width: 960px;
+    height: 1080px;
+    position: relative;
+    /* background-color: red; */
+    /* display: block; */
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-end;
+	align-items: center;
+    align-content: stretch;
+    margin-right: 128px;
+}
+.section2-part2 {
+    width: 960px;
+    height: 1080px;
+    position: relative;
+    /* background-color: green; */
+    /* display: block; */
+}
+
+.section2 .video-image {
+position: absolute;
+left: 0px;
+bottom: 0px;
+}
+
+.section2-part1 .videoinfo-container {
+    width: 522px;
+    height: 349; 
+    position: absolute;
+}
+
+.videoinfo-container .textheader {
+    font-size: 48px;
+    line-height: 58px;
+    color: #16393A;
+    font-weight: 700;
+}
+
+.videoinfo-container .textsubheader {
+    font-size: 20px;
+    line-height: 32px;
+    color: #2D7275;
+    font-weight: 400;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.videoinfo-container button {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 199px;
+    height: 52px;
+    background-color: #16393A;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+    box-sizing: border-box;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    text-transform: uppercase;
+}
+
+.videoinfo-container button:hover {
+background-color: #F9FDFD;
+border: 2px solid #16393A;
+color: #16393A;
+} 
+
+.section2-part2 {
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+justify-content: flex-start;
+align-items: center;
+align-content: stretch;
+}
+
+.section2-part2 iframe {
+    position: relative;
+    width: 832px;
+    height: 469px;
+    box-shadow: 0px 0px 40px rgba(56, 142, 146, 0.5);
+    box-shadow: 0px 8px 20px rgba(56, 142, 146, 0.6);
+}
+
+/* Section 2 End */
+
+/* BUTTON NEW  */
+
+.newsletterbtn {
+    margin: auto;
+    width: 30%;
+    padding: 48px;
+}
+
+.newsletterbtn form .input-field-subscribe {
+    display: flex;
+}
+
+.newsletterbtn .input-field-subscribe .emailnews-input {
+    /* margin: 150px; */
+    width: 479px;
+    height: 88px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 20px;
+    text-align: start;
+    padding-left: 32px;
+    background-color: #16393A;
+    color: #fff;
+    outline: none;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px 0 0 4px;
+}
+
+::placeholder {
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 20px;
+  }
+
+.newsletterbtn .input-field-subscribe button {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 180px;
+    height: 88px;
+    background-color: #0FA184;
+    /* border-radius: 4px; */
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+    box-sizing: border-box;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    text-transform: capitalize;
+    border-radius: 0 4px 4px 0;
+}
+
+/* BUTTON NEW  */
+
+/* Section 3 Start */
+
+.section3 {
+    width: 100%;
+    height: 1080px;
+    position: relative;
+    /* background-color: red; */
+    /* margin-top: 196px; */
+    display: flex;
+}
+
+.section3 .sec3_text {
+    width: 828px;
+    height: 186px;
+    /* background-color: sandybrown; */
+    margin: 128px auto;
+}
+
+.sec3_text h1 {
+    font-size: 48px;
+    line-height: 58px;
+    color: #16393A;
+    font-weight: 700;
+    text-align: center;
+}
+
+.sec3_text p {
+    font-size: 20px;
+    line-height: 32px;
+    color: #2D7275;
+    font-weight: 400;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    text-align: center;
+}
+
